@@ -17,7 +17,7 @@ function setup(){
 
     
     ground = new Ground(600,height,1200,20)
-
+    platform = new Ground(150,300,300,150)
     box1 = new Box(700,320,70,70);
     box2 = new Box(920,320,70,70);
     pig1 = new Pig(810, 350);
@@ -38,6 +38,8 @@ function setup(){
 }
 
 function draw(){
+    //new comment added
+    
     background(backgroundImg);
     Engine.update(engine);
     console.log(box2.body.position.x);
@@ -46,6 +48,7 @@ function draw(){
     box1.display();
     box2.display();
     ground.display();
+    platform.display();
     pig1.display();
     log1.display();
 
